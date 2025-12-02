@@ -1,13 +1,1 @@
 runtime: "typescript"
-buildCommand: "npx smithery build -o .smithery/index.mjs && cp -r data .smithery/data"
-startCommand:
-  type: "stdio"
-  configSchema:
-    type: "object"
-    properties: {}
-    additionalProperties: false
-  commandFunction: |-
-    (config) => ({
-      command: 'node',
-      args: ['.smithery/index.mjs']
-    })

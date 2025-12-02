@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "npx smithery build",
+    "build": "npx smithery build -o dist/index.js && npm run copy-data",
     "build:legacy": "rimraf ./dist && tsc && shx chmod +x dist/*.js && npm run copy-data",
     "dev": "npx smithery dev",
     "prepare": "npm run build:legacy",
@@ -29,13 +29,13 @@
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.8.4",
     "axios-retry": "^4.5.0",
+    "copyfiles": "^2.4.1",
     "zod": "^3.24.2",
     "zod-to-json-schema": "^3.24.4"
   },
   "devDependencies": {
     "@smithery/cli": "^1.6.3",
     "@types/jest": "^29.5.12",
-    "copyfiles": "^2.4.1",
     "jest": "^29.7.0",
     "rimraf": "^6.0.1",
     "shx": "^0.3.4",
