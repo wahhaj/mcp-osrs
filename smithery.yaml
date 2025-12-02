@@ -1,5 +1,5 @@
 runtime: "typescript"
-buildCommand: "npx smithery build -o .smithery/index.mjs"
+buildCommand: "npx smithery build -o .smithery/index.mjs && cp -r data .smithery/data"
 startCommand:
   type: "stdio"
   configSchema:
