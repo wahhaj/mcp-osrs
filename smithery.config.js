@@ -1,8 +1,5 @@
-import { createRequire } from 'module';
-
 export default {
     esbuild: {
-        format: "esm",
         target: "node20",
         external: [
             "zod-to-json-schema",
@@ -23,9 +20,6 @@ export default {
             "net",
             "tls",
             "assert"
-        ],
-        banner: {
-            js: `import { createRequire } from 'module';const require = createRequire(import.meta.url);`
-        }
+        ]
     },
 };
