@@ -14,9 +14,15 @@ import path from 'path';
 import readline from 'readline';
 import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const DATA_DIR = path.join(__dirname, 'data');
+const moduleFilename =
+    typeof __filename !== "undefined"
+        ? __filename
+        : fileURLToPath(import.meta.url);
+const moduleDirname =
+    typeof __dirname !== "undefined"
+        ? __dirname
+        : path.dirname(moduleFilename);
+const DATA_DIR = path.join(moduleDirname, 'data');
 
 const responseToString = (response: any) => {
     const contentText = typeof response === 'string' ? response : JSON.stringify(response);
