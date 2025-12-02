@@ -68,7 +68,7 @@ const ListDataFilesSchema = z.object({
 });
 
 function convertZodToJsonSchema(schema: z.ZodType<any>) {
-  const jsonSchema = zodToJsonSchema(schema);
+    const jsonSchema = (zodToJsonSchema as any)(schema);
   delete jsonSchema.$schema;
   delete jsonSchema.definitions;
   return {
