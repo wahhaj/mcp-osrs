@@ -1,4 +1,4 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/jayarrowz-mcp-osrs-badge.png)](https://mseep.ai/app/jayarrowz-mcp-osrs)
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/jayarrowz-mcp-osrs-badge.png)](https://mseep.ai/app/jayarrowz-mcp-osrs) [![smithery badge](https://smithery.ai/badge/@wahhaj/mcp-osrs)](https://smithery.ai/server/@wahhaj/mcp-osrs)
 
 # OSRS MCP Server [![smithery badge](https://smithery.ai/badge/@jayarrowz/mcp-osrs)](https://smithery.ai/server/@jayarrowz/mcp-osrs)
 
